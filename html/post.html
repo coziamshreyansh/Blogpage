@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+
+    <!-- TODO: Include Bootstrap files here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="..\css\header.css">
+    <link rel="stylesheet" type="text/css" href="..\css\post.css">
+
+
+    <!-- TODO: Include Font Awesome file here -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="heading1">ScriBBler</div>
+        <div class="heading2">Explore. Imagine. Create</div>
+        <div class="buttons">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signinmodal">Sign In</button>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign Up</button>
+        </div>
+    </header>
+
+
+    <!-- Modal #1: Sign In Modal-->
+    <div class="modal fade" id="signinmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Welcome Back!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form>
+                        <label>Username</label>
+                        <br>
+                        <input type="text" placeholder="Enter Username" name="" required>
+                        <br><br>
+                        <label>Password</label>
+                        <br>
+                        <input type="password" placeholder="Enter Password" name="" required>
+                        <br><br>
+                        <button id="modalsiginbtn">Sign In</button>
+                        <br><br>
+                        <div id="notamember">Not a member? <a href="" data-bs-toggle="modal" data-bs-target="#signupmodal" data-bs-dismiss="modal">Sign Up</a></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal #2: Sign Up Modal-->
+    <div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Get Started</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form>
+                        <label>Full Name</label>
+                        <br>
+                        <input type="text" placeholder="Enter FullName" name="" required>
+                        <br><br>
+                        <label>Username</label>
+                        <br>
+                        <input type="text" placeholder="Enter Username" name="" required>
+                        <br><br>
+                        <label>Password</label>
+                        <br>
+                        <input type="password" placeholder="Enter Password" name="" required>
+                        <br><br>
+                        <label>Confirm Password</label>
+                        <br>
+                        <input type="password" placeholder="Confirm Password" name="" required>
+                        <br><br>
+                        <button id="modalsiginbtn">Sign Up</button>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NEW CODE STARTS FROM HERE -->
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+            <textarea id="titleArea" style="display: none; width: 247px;font-size: 16.5px"></textarea>
+        </div>
+
+        <div class="blogAuthor">
+
+            <!-- Insert code for Edit/Save button and  -->
+            <p>Jimi</p>
+            <a href=# id="edit" onclick="changeText()">
+                <div id="text"> Edit</div>
+                <div id="text2"><i class="fas fa-edit"></i></div>
+            </a>
+        </div>
+
+        <div class="blogText">
+            <p id="blogBody">
+                Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded
+                the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His
+                boundless drive, technical ability and creative application of such effects as distortion forever
+                transformed the sound of rock and roll. While creating his unique musical voice and guitar style,
+                Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s
+                rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and
+                gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier
+                feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the
+                standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string
+                root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing",
+                which allowed him to sustain the root note of chords while also playing melody. This method has been
+                described as piano style, with the thumb playing what a pianist's left hand would play and the other
+                fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an
+                ability to play rhythm chords and lead lines together, giving the audio impression that more than one
+                guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing
+                effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix
+                pioneered the use of the instrument as an electronic sound source. Players before him had experimented
+                with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid
+                vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock
+                guitar, there are but two eras � before Hendrix and after Hendrix."
+            </p>
+            <textarea id="textarea" style="display: none"></textarea>
+        </div>
+
+        <!-- Insert code for Like button, Comment button, Comment box here-->
+        <a href=# onclick="liker()" id="edit" style="width: 90px">
+            <div id="text"><i class="fas fa-thumbs-up"></i></div>
+            <div id="text2" class="likeText">Like</div>
+        </a>
+        <p id="like">Be the first one to like this!</p>
+        <div id="commentBox" style="display: none">
+            <textarea id="cmntText" placeholder="Leave a comment..." style="height: 85px; width: 40%"></textarea><br>
+            <button onclick="cmnt()">Comment</button>
+            <B>
+                <p>All Comments</p>
+            </B>
+            <div id="commentArea"
+                style="width: 45%; background-color: darkgray; height: auto; padding: 10px ;display: none">
+            </div>
+        </div>
+        <p id="temp" style="display: none;"><i class="far fa-save"></i></p>
+        <p id="temp2" style="display: none;"><i class="fas fa-edit"></i></p>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+        <script src="..\js\post.js"></script>
+</body>
+
+</html>

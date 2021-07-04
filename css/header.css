@@ -1,0 +1,44 @@
+.heading1{
+	font-family: "Satisfy";
+	font-size: 45px;
+	color: blue;
+    position: relative;
+    left: 20px;
+	width: 50%;
+}
+.heading2{
+	font-family: "Marck Script";
+	font-size: 15px;
+	color: black;
+    position: relative;
+    left: 20px;
+	width: 50%;
+}
+.buttons{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+.btn{
+	background-color: blue;
+	color: white;
+	padding: 8px 8px;
+}
+
+h5,label{
+	font-weight: bold;
+}
+input, textarea{
+	background-color: #f1f1f1 !important;
+	padding: 10px;
+	width: 100%;
+	border: none;
+}
+#modalsiginbtn{
+	background-color: #0ec038;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	border: none;
+}
