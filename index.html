@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- TODO: Include Google Fonts file here -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+
+
+	<!-- TODO: Include Bootstrap files here -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css\header.css">
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+
+	<!-- TODO: Include Font Awesome file here -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="heading1">ScriBBler</div>
+		<div class="heading2">Explore. Imagine. Create</div>
+		<div class="buttons">
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signinmodal">Sign In</button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign Up</button>
+		</div>
+	</header>
+	<div class="midbuttons">
+		<button class="btn1" id="allbtn" onclick="window.location.href='html/bloglist.html'"><b>All Post</b></button>
+		<button class="btn1" id="createbtn" data-bs-toggle="modal" data-bs-target="#createmodal"><b>Create
+				Post</b></button>
+
+	</div>
+
+
+	<!-- Modal #1: Sign In Modal-->
+	<div class="modal fade" id="signinmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title w-100 text-center" id="exampleModalLabel">Welcome Back!</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+
+					<form>
+						<label>Username</label>
+						<br>
+						<input type="text" placeholder="Enter Username" name="" required>
+						<br><br>
+						<label>Password</label>
+						<br>
+						<input type="password" placeholder="Enter Password" name="" required>
+						<br><br>
+						<button id="modalsiginbtn">Sign In</button>
+						<br><br>
+						<div id="notamember">Not a member? <a href="" data-bs-toggle="modal"
+								data-bs-target="#signupmodal" data-bs-dismiss="modal">Sign Up</a></div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal #2: Sign Up Modal-->
+	<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title w-100 text-center" id="exampleModalLabel">Get Started</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+
+					<form>
+						<label>Full Name</label>
+						<br>
+						<input type="text" placeholder="Enter FullName" name="" required>
+						<br><br>
+						<label>Username</label>
+						<br>
+						<input type="text" placeholder="Enter Username" name="" required>
+						<br><br>
+						<label>Password</label>
+						<br>
+						<input type="password" placeholder="Enter Password" name="" required>
+						<br><br>
+						<label>Confirm Password</label>
+						<br>
+						<input type="password" placeholder="Confirm Password" name="" required>
+						<br><br>
+						<button id="modalsiginbtn">Sign Up</button>
+
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal #3: Create Post Modal-->
+	<div class="modal fade" id="createmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content" id="createModalContent">
+				<div class="modal-header">
+					<!-- w-100 textcenter is for alignment of text via col -->
+					<h5 class="modal-title w-100 text-center " id="exampleModalLabel">Pen Your Post</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+					<form>
+						<label>Title:</label>
+						<input type="textbox" name="">
+						<br>
+						<br>
+						<label>Content:</label>
+						<div class="input-group">
+							<textarea class="form-control" aria-label="With textarea"></textarea>
+						</div>
+						<button id="createbutton">Create</button>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+	 <script src="..\js\index.js"></script>
+</body>
+
+</html>
